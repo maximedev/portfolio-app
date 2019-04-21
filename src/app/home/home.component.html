@@ -1,0 +1,18 @@
+<div id="home">
+<owl-carousel-o [options]="customOptions">
+    <ng-container *ngFor="let slide of slides">
+        <ng-template carouselSlide [id]="slide.id">
+          <div class="carousel-item active" [ngStyle]="{'background-image': 'url( ' + slide.url + ')'}">
+            <div class="carousel-caption d-md-block">
+              <h2 class="text-uppercase">Intitulé du poste - profession</h2>
+              <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore  et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </ng-template>
+      </ng-container>
+</owl-carousel-o>
+</div>
+<app-about></app-about>
+<app-gallery></app-gallery>
